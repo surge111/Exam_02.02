@@ -44,7 +44,14 @@ namespace Exam
         {
             if (textBox1.Text == "user" && textBox2.Text == "user")
             {
-
+                var f = new Form2();
+                this.Visible = false;
+                f.ShowDialog();
+                this.Visible = true;
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                SetCaptcha();
             }
             else
             {
